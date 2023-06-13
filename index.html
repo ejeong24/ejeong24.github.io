@@ -1,122 +1,83 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* Global Styles */
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 40px;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 24px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin-left: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-section {
-  padding: 40px 0;
-  text-align: center;
-}
-
-section h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.profile img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.project {
-  margin-bottom: 20px;
-}
-
-.project h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.project p {
-  margin-bottom: 10px;
-}
-
-.project-links a {
-  display: inline-block;
-  margin-right: 10px;
-  color: #333;
-  background-color: #f4f4f4;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.project-links a i {
-  margin-right: 5px;
-}
-
-.contact-details {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.contact-item {
-  flex: 1 0 50%;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.contact-item i {
-  margin-right: 10px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <div class="container">
+      <div class="profile">
+        <img src="profile-picture.jpg" alt="Profile Picture">
+        <div class="profile-text">
+          <h2>About Me</h2>
+          <p>Write a brief introduction about yourself and your skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
+        <div class="project-links">
+          <a href="link_to_project_demo" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
+          <a href="link_to_project_repository" target="_blank"><i class="fab fa-github"></i> View Code</a>
+        </div>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+        <div class="project-links">
+          <a href="link_to_project_demo" target="_blank"><i class="fas fa-external-link-alt"></i> View Demo</a>
+          <a href="link_to_project_repository" target="_blank"><i class="fab fa-github"></i> View Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-details">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p>Email: your_email@example.com</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <p><a href="https://github.com/your-username" target="_blank">GitHub</a></p>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <p><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Your Name</p>
+  </footer>
+</body>
+</html>
