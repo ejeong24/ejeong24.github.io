@@ -92,3 +92,16 @@ footer {
   margin-top: 20px;
   box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.1);
 }
+
+a {
+  color: #fff; /* white color */
+  text-decoration: none; /* removes the underline */
+}
+
+a:hover {
+  color: #ddd; /* light grey color when hovered upon */
+}
+
+a:visited {
+  color: #aaa; /* a lighter grey color after being clicked */
+}
