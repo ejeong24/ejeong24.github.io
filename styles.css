@@ -63,6 +63,7 @@ nav ul li a:hover {
 
 .project, .experience, .education {
   margin: 20px 0;
+  text-align: center;
 }
 
 .project h3, .experience h3, .education h3 {
