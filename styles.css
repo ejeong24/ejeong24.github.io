@@ -101,7 +101,7 @@ footer {
 }
 
 .project-thumbnail {
-  width: 100px;  /* adjust as needed */
-  height: 100px; /* adjust as needed */
+  width: 300px;  /* adjust as needed */
+  height: 300px; /* adjust as needed */
   object-fit: cover;
 }
