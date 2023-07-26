@@ -42,17 +42,20 @@ h1, h2 {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
-.project, .experience, .education {
+.project {
   margin: 20px;
 }
 
-.project h3, .experience h3, .education h3 {
+.project h3 {
   margin-top: 0;
 }
 
-.project-links a, .experience a, .education a {
+.project-links a {
   display: inline-block;
   margin-right: 10px;
   background-color: #333;
@@ -63,7 +66,7 @@ h1, h2 {
   transition: background-color 0.3s ease;
 }
 
-.project-links a:hover, .experience a:hover, .education a:hover {
+.project-links a:hover {
   background-color: #444;
   color: #fff; /* white color when hovered */
 }
@@ -78,13 +81,6 @@ h1, h2 {
 
 .project:hover .project-thumbnail {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px;
-  padding: 1em;
 }
 
 footer {
